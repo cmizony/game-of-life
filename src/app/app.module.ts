@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { GridComponent } from './grid/grid.component';
 import { CellComponent } from './grid/cell/cell.component';
 import { ReduxService } from './redux/redux.service';
+import { ReducersService } from './redux/reducers.service'
 import { MenuComponent } from './menu/menu.component'
 
 @NgModule({
@@ -22,7 +23,8 @@ import { MenuComponent } from './menu/menu.component'
     HttpModule
   ],
   providers: [
-    ReduxService
+    ReduxService,
+    ReducersService
   ],
   bootstrap: [AppComponent]
 })
