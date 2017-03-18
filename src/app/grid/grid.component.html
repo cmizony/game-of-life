@@ -1,0 +1,8 @@
+<div>
+  <div *ngFor="let row of cells ; let i = index"
+       class="grid-row">
+    <div *ngFor="let value of row ; let j = index"
+         class="grid-column">
+         <grid-cell [value]="value" [x]="i" [y]="j"></grid-cell>
+  </div>
+</div>

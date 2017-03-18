@@ -1,0 +1,12 @@
+.grid-column {
+  float:        left;
+  width:        20px;
+  height:       20px;
+  line-height:  20px;
+  background:   whitesmoke;
+  border:       1px solid silver;
+}
+
+.grid-row {
+  clear: both;
+}

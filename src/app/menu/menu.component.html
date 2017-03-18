@@ -1,0 +1,11 @@
+<p>
+  Rows: <input type="text" [(ngModel)]="rows" (keyup)="onKey()">
+  Cols: <input type="text" [(ngModel)]="cols" (keyup)="onKey()">
+  <button (click)="nextState()">Next state</button>
+  <button (click)="reset()">Reset</button>
+  Speed (sec): <input type="text" [(ngModel)]="speed" (keyup)="startGame()">
+  <button (click)="togglePlay()">
+    <span *ngIf="!play">Play</span>
+    <span *ngIf="play">Pause</span>
+  </button>
+</p>
